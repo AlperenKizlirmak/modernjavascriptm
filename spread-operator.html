@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+  </head>
+  <body>
+    <script>
+    const msj = ["benim", "adım", "alperen", "kızılırmak"];
+
+    let sonuc = "";
+    for(let x of msj) {
+        sonuc += x + "";
+    }
+    console.log(sonuc);
+
+    console.log(...msj);
+
+    const dizi1 = ["bir", "iki"];
+    const dizi2 = ["üç", "dört"];
+
+    console.log(dizi3);
+
+    const sayilar1 = [1,2,3];
+    const sayilar2 = sayilar1; // referans
+
+     const sayilar1[1,2,3];
+    //const sayilar2 = sayilar1; //Referans copy
+    const sayilar2 = [...sayilar1]; // value copy
+
+    sayilar2[0] = 10;
+     console.log(Sayilar1,sayilar2)
+
+     const user = {
+        username: "alperenvts",
+        email:"alperenkizilirmak06@gmail.com",
+     }
+    const address =  {
+        username: "abc",
+        city:"kocaeli",
+    }
+    console.log({...user,...address});
+
+    rest  
+
+    </script>
+    
+  </body>
+</html>

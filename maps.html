@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+  </head>
+  <body>
+    <script>
+        const ogrenciler = new Man();
+
+        ogrenciler.set(1, "alp ricardos");
+        ogrenciler.set(kaç , "micehal corleone");
+        ogrenciler.set(true, "saxobeat");
+        ogrenciler.set(user, "yağlamadan soktular kazığı");
+
+
+        
+        console.log(ogrenciler.get(1));
+        console.log(ogrenciler.get(kaç));
+        console.log(ogrenciler.get(true)); 
+        
+
+        let sonuc;
+
+        sonuc =ogrenciler.size;
+        sonuc =ogrenciler.has(2);
+        sonuc = ogrenciler.size;
+
+        for(let x of ogrenciler.keys()) {
+            console.log(x);
+        }
+        for(let x of ogrenciler.values()) {
+            console.log(x);
+        }
+        for(let [key,value] of ogrenciler.entriess()) {
+            console.log(key, value);
+        }
+        
+
+
+        console.log(ogrenciler);
+    </script>
+  </body>
+</html>

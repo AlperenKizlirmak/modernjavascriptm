@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+  </head>
+  <body>
+    <script>
+        // fucntion constructor
+
+        function Kisi(ad, meslek, dogumYili) {
+         this.ad = ad;
+         this.meslek = meslek;
+         this.dogumYili = dogumYili
+         this.yasHesapla = function() {
+            let tarih = new Date().getFullYear();
+            return tarih - this.dogumYili;
+          }
+        }
+        let emre = new Kisi("emre yağcı", "öğrenci",1990);
+        let ahmet = new Kisi("ahmet yılmaz", "öğretmen",1985);
+        
+        // class
+        class KisiES6 {
+            constructor() {
+                console.log("nesne oluşturuldu.");
+            }
+        }
+
+        let kisi1 = new KisiES6("çınar turan","öğrenci", 2017);
+        let kisi2 = new KisiES6("ben fero", "öğrenci", 2012);
+       
+console.log(kisi1);
+console.log(kisi2);
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+  </head>
+  <body>
+    <script>
+        // class
+        class Kisi{
+            constructor(ad, meslek, dogumYili) {
+                this.ad = ad;
+                this.meslek = meslek;
+                this.adogumYili = dogumYili;
+            }
+            yasHesapla(){
+                let tarih = new Date().getFullYear();
+                return tarih - this.dogumYili;
+            }
+            get ad() {
+                return this._ad;
+            }
+
+            set ad(value) {
+                if(value.length < 3) {
+                    console.log("ad içiçn çok az karakter");
+                    return;
+                }
+                this._ad = value;
+            }
+        }
+        let kisi1  =  new Kisi("çınar", "ögrenci", 2020);
+        console.log()
+        console.log()
+    </script>
+  </body>
+</html>
